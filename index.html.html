@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>form12345.rf.gd</title>
+</head>
+<link rel="stylesheet" href="form.css">
+    <script src="form.js"></script>
+<body>
+    <h1>Only For 11th Class</h1>
+    <hr>
+    <section>
+    <div class="container">
+         <!-- Ye Action Form Hai  -->
+        <form action="https://formspree.io/f/mnqlbdkw" method="POST" id="myform">
+            <div class="from-group">
+                <label for="Which Stream">Which Stream</label><br>
+                <select name="Which Stream" id="Which Stream">
+                    <option value="-None-">-None-</option>
+                    <option value="Agriculter">Agriculter</option>
+                    <option value="Art">Art</option>
+                    <option value="Commerce">Commerce</option>
+                    <option value="Science(Bio)">Science(Bio)</option>
+                    <option value="Science(Mathematics)">Science(Mathematics)</option>
+                </select>
+            </div>
+            <div class="from-group">
+                <label for="First Name">First Name</label><br>
+                <input type="text" name="First Name" id="First Name">
+            </div>
+            <div class="from-group">
+                <label for="Last Name">Last Name</label><br>
+                <input type="text" name="Last Name" id="Last Name">
+            </div>
+            <div class="from-group">
+                <label for="MyGender Male">MyGender Male</label>
+                <input type="radio" name="MyGender">female<input type="radio" name="MyGender">Other*<input type="radio" name="MyGender">
+            </div>
+            <div class="from-group">
+                <label for="DateOfBirth">DateOfBirth</label><br>
+                <input type="date" name="DateOfBirth" id="DateOfBirth">
+            </div>
+            <div class="from-group">
+                <label for="Your Email">Your Email</label><br>
+                <input type="email" name="Your Email" id="Your Email">
+            </div>
+            <div class="from-group">
+                <label for="Mobile number">Mobile number</label><br>
+                <input pattern="[0-9]{10}" type="number" name="Mobile number" required="required" id="Mobile number">
+            </div>
+            <div class="from-group">
+                <label for="Previous Class Percentage">Previous Class Percentage</label><br>
+                <input placeholder="enter your Percentage " type="number" name="Previous Class Percentage" pattern="[0-9]{2-3}" id="Previous Class Percentage" required="required">
+            </div>
+            <div class="from-group">
+                <label for="Choose Image">Choose Image</label><br>
+                <input type="file" name="img1" onchange="ReadURL(This);" class="From-control" id="Choose Image" required>
+            </div>
+            <div class="from-group">
+                <label for="Write Here-">Write Here-</label><br>
+                <textarea name="My Name" id="Write Here-" cols="30" rows="10"></textarea>
+
+            </div>
+            <button type="Submit">Submit</button>
+            <button type="reset">Reset</button><br>
+            <br>
+        </form>
+    </div>
+    </section>
+</body>
+</html>
